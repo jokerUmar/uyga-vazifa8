@@ -1,0 +1,44 @@
+.aside {
+    width: 250.99px;
+    background: linear-gradient(175.93deg, #5F00D8 -10.23%, #B200F1 117.03%);
+    color: white;
+    padding-left: 34px;
+    height: 170vh;
+    
+}
+
+.logo {
+    display: inline-block;
+    padding-top: 43px;
+    padding-bottom: 35px;
+}
+
+.line {
+    opacity: 0.2;
+    border: 1px solid #FFFFFF;
+    width: 181.83px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.todo{
+    margin-top: 40px;
+}
+
+.link{
+    margin-bottom: 43px;
+}
+
+
+.logout{
+margin-top: 220px;
+}
+
+.aside-text , .log{
+    font-size: 22px;
+}

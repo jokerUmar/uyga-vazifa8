@@ -1,0 +1,40 @@
+.item-api{
+    padding: 5px;
+}
+
+.api-title{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.api__text{
+    font-size: 20px;
+    display: inline-block;
+    width: 400px;
+}
+
+.id{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.item-api{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-api:nth-child(even){
+    background-color: rgba(238, 242, 245, 1);
+}
+
+
+.api-list{
+    border: solid 1px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
