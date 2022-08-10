@@ -34,15 +34,22 @@ setData(filterItem)
 }
 
 const [current2, setCurrent2] = useState(1);
-const [totalPage2, setTotalPage2] = useState(10);
+const [totalPage2, setTotalPage2] = useState(9);
 
 const firstIndex2 = current2 * totalPage2
 const lastIndex2 = firstIndex2 - totalPage2
 
 const lastData2 = data.slice(lastIndex2 , firstIndex2)
 
+let paginate2 = (num2) => {
+    setCurrent2(num2)
+}
 
+let dot2 = []
 
+for(let i = 1; i <= Math.ceil(data.length/totalPage2); i++) {
+    dot2.push(i)
+}
 
 return (
 <div className='main'>
@@ -70,7 +77,7 @@ return (
             </li>
 
             {
-            data.map((item , idx) =>{
+            lastData2.map((item , idx) =>{
             return <li className='list-item'>
                 <p className="number">{idx+1}</p>
                 <p className='name'>{item.name}</p>
@@ -87,7 +94,11 @@ return (
         </ul>
 
         <ul className="pagination">
-            <li className="waves-effect"><a href="#!"></a></li>
+            {
+                dot2.map(dot =>{
+                   return <li className="waves-effect" onClick={()=> paginate2(dot)}><a href="#!">{dot}</a></li>
+                })
+            }
         </ul>
 
     </div>

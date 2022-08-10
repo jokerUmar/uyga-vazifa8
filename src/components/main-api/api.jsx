@@ -5,7 +5,6 @@ function Api({data , totalPage,lastData, paginate}) {
 
 const dot = []
 
-console.log(dot);
 
 for (let i = 1; i <=Math.ceil( data.length/totalPage); i++) {
     dot.push(i)
@@ -29,11 +28,9 @@ return (
 
             {
              dot.map(i => {
-            return <li className="waves-effect" onClick={()=>paginate(i)}><a  href="#!">{i}</a></li>
- 
+                return <li className="waves-effect" onClick={()=>paginate(i)}><a  href="#!">{i}</a></li>
              })
             }
-            
             
         </ul>
 

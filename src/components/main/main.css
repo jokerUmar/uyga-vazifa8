@@ -2,6 +2,7 @@
     margin-left: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 55px;
 }
 
@@ -12,10 +13,18 @@
     padding-right: 62px;
 }
 
+.form{
+    width: 400px;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+}
+
 .input {
     width: 300px;
     padding-left: 10px;
     height: 40px;
+    border: solid 1px;
 }
 
 .form button {
@@ -27,6 +36,7 @@
     width: 67.45px;
     height: 35.5px;
 }
+
 
 .title{
     font-weight: 500;

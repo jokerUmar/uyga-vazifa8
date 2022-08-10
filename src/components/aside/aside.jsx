@@ -2,24 +2,25 @@ import React from 'react'
 import "./aside.css"
 import logo from "../../assets/image/logo.png"
 import logout from "../../assets/image/vector.png"
+import {Link} from "react-router-dom"
 
 function Aside() {
 return (
 <div className="container">
     <div className='aside'>
    
-    <a className='logo' href="">
-    <img   src={logo} alt="" />
-    </a>
+    <Link to="/" className='logo'>
+    <img  src={logo} alt="" />
+    </Link>
 
     <div className="line"></div>
 
     <div className='aside-box'>
 
     <div className="span">
-    <a href='' className='todo link'><h3 className='aside-text'>TODO LISTS</h3></a>
+    <Link to="/" className='todo link'><h3 className='aside-text'>TODO LISTS</h3></Link>
     <br />
-    <a href="" className='API link'><h3 className='aside-text' >API LIST</h3></a>
+    <Link to="/api" className='API link'><h3 className='aside-text' >API LIST</h3></Link>
 
     </div>    
 
